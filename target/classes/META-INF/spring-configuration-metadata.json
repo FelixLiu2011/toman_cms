@@ -1,0 +1,40 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.toman.datasources.DynamicDataSourceConfig",
+      "name": "spring.datasource.druid.first",
+      "sourceMethod": "firstDataSource()",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.toman.datasources.DynamicDataSourceConfig",
+      "name": "spring.datasource.druid.second",
+      "sourceMethod": "secondDataSource()",
+      "type": "javax.sql.DataSource"
+    },
+    {
+      "sourceType": "com.toman.modules.app.utils.JwtUtils",
+      "name": "toman.jwt",
+      "type": "com.toman.modules.app.utils.JwtUtils"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.toman.modules.app.utils.JwtUtils",
+      "defaultValue": 0,
+      "name": "toman.jwt.expire",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "com.toman.modules.app.utils.JwtUtils",
+      "name": "toman.jwt.header",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.toman.modules.app.utils.JwtUtils",
+      "name": "toman.jwt.secret",
+      "type": "java.lang.String"
+    }
+  ]
+}
